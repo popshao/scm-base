@@ -1,0 +1,12 @@
+#app:
+#  id: wms-web
+#apollo:
+#  bootstrap:
+#    enabled: true
+#    namespaces: application
+#
+#spring:
+#  application:
+#    name: wms-web
+#  profiles:
+#    active: test

@@ -1,0 +1,29 @@
+#app:
+#  id: wms-service
+#apollo:
+#  bootstrap:
+#    enabled: true
+#    namespaces: redis
+#
+#spring:
+#  application:
+#    name: wms-service
+#  profiles:
+#    active: test
+
+#  redis:
+#    database: 0
+#    host:
+#    port:
+#    password: ${redis.common.key}
+#    ssl:
+#    timeout:
+#    cluster:
+#      nodes:
+#    sentinel:
+#      master: imaster
+#      nodes: redis1.test.yiyaowang.com:26379,redis2.test.yiyaowang.com:26379,redis3.test.yiyaowang.com:26379
+# Redisson settings
+#path to config - redisson.yaml
+#    redisson:
+#      file: classpath:redisson.yml

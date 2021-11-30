@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>scm-base</artifactId>
+        <groupId>com.gangling.scm.base</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>scm-middleware</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>scm-alarm</module>
+        <module>scm-cache</module>
+        <module>scm-datasource</module>
+        <module>scm-distributed-job</module>
+        <module>scm-oss</module>
+        <module>scm-email</module>
+        <module>scm-mongodb</module>
+        <module>scm-trace</module>
+        <module>scm-mq</module>
+        <module>scm-log</module>
+    </modules>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.ctrip.framework.apollo</groupId>
+            <artifactId>apollo-client</artifactId>
+            <version>1.8.0</version>
+        </dependency>
+    </dependencies>
+</project>

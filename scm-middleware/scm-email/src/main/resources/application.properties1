@@ -1,0 +1,5 @@
+#mail.smtp = smtp.111.com.cn
+#mail.username = gyl_sys@111.com.cn
+#mail.password = Yyw,147258
+#mail.smtp.port = 465
+#mail.from = gyl_sys@111.com.cn

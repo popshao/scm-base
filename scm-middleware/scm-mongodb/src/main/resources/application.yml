@@ -1,0 +1,16 @@
+apollo:
+  bootstrap:
+    enabled: true
+    namespaces: application,dubbo,33.zk,apigateway,db,redis
+
+spring:
+  application:
+    name: wms-service
+  profiles:
+    active: test
+  mongodb:
+    database: b2c
+    host: mongo1.test.yiyaowang.com
+    port: 27017
+    username: b2cadmin
+    password: yyw,123

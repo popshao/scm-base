@@ -1,0 +1,30 @@
+sentinelServersConfig:
+#  idleConnectionTimeout: 10000
+#  connectTimeout: 10000
+#  timeout: 3000
+#  retryAttempts: 3
+#  retryInterval: 1500
+#  failedSlaveReconnectionInterval: 3000
+#  failedSlaveCheckInterval: 60000
+  #  password: foobared
+#  subscriptionsPerConnection: 5
+  clientName: null
+  loadBalancer: !<org.redisson.connection.balancer.RoundRobinLoadBalancer> {}
+#  subscriptionConnectionMinimumIdleSize: 1
+#  subscriptionConnectionPoolSize: 50
+  slaveConnectionMinimumIdleSize: 1
+#  slaveConnectionPoolSize: 64
+  masterConnectionMinimumIdleSize: 1
+#  masterConnectionPoolSize: 64
+  readMode: "MASTER"
+  subscriptionMode: "MASTER"
+  #  sentinelAddresses:
+  #    - "redis://redis1.test.yiyaowang.com:26379"
+  #    - "redis://redis2.test.yiyaowang.com:26379"
+  #    - "redis://redis3.test.yiyaowang.com:26379"
+  #  masterName: "imaster"
+  database: 0
+# threads: 16
+# nettyThreads: 32
+codec: !<org.redisson.codec.JsonJacksonCodec> {}
+transportMode: "NIO"
